@@ -2,19 +2,13 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 	
-	/**
-	 * 
-	 */
-	private static final int itemType_Chromebook = 2;
-	/**
-	 * 
-	 */
-	private static final int itemType_Camcorder = 1;
 	private static final int Option_View = 1;
 	private static final int Option_Add = 2;
 	private static final int Option_Loan = 3;
 	private static final int Option_Return = 4;
 	private static final int Option_Quit = 5;
+	private static final int itemType_Camcorder = 1;
+	private static final int itemType_Chromebook = 2;
 	
 	public static void main(String[] args) {
 
