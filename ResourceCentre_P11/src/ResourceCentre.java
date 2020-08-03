@@ -76,10 +76,10 @@ public class ResourceCentre {
 				itemTypeMenu();
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
-				if (itemType == 1) {
+				if (itemType == itemType_Camcorder) {
 					// Return camcorder
 					ResourceCentre.returnCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == itemType_Chromebook) {
 					// Return Chromebook
 					ResourceCentre.returnChromebook(chromebookList);
 				} else {
