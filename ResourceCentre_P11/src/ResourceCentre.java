@@ -135,11 +135,12 @@ public class ResourceCentre {
 		String output = "";
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-			Camcorder Cc = camcorderList.get(i);
-			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", Cc.getAssetTag(),
-					Cc.getDescription(), 
-					ResourceCentre.showAvailability(Cc.getIsAvailable()),
-					Cc.getDueDate(),Cc.getOpticalZoom());
+			
+			Camcorder getCamcorder = camcorderList.get(i);
+			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", getCamcorder.getAssetTag(),
+					getCamcorder.getDescription(), 
+					ResourceCentre.showAvailability(getCamcorder.getIsAvailable()),
+					getCamcorder.getDueDate(), getCamcorder.getOpticalZoom());
 		}
 		return output;
 	}
@@ -156,11 +157,11 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			Chromebook Cb = chromebookList.get(i);
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", Cb.getAssetTag(),
-					Cb.getDescription(), 
-					ResourceCentre.showAvailability(Cb.getIsAvailable()),
-					Cb.getDueDate(),Cb.getOs());
+			Chromebook getChromebook = chromebookList.get(i);
+			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", getChromebook.getAssetTag(),
+					getChromebook.getDescription(), 
+					ResourceCentre.showAvailability(getChromebook.getIsAvailable()),
+					getChromebook.getDueDate(),getChromebook.getOs());
 		}
 		return output;
 	}
